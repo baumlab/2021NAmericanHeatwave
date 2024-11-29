@@ -1,0 +1,11 @@
+﻿Real-time data - subject to revision
+Copyright Environment Canada(2022)
+
+"Real-Time Hydrometric Data for MACKENZIE RIVER AT NORMAN WELLS (10KA001) [NT]"
+
+10KA001,"MACKENZIE RIVER AT NORMAN WELLS"
+Description of parameters:
+47,"Discharge (primary sensor derived)",m³/s
+6,"Discharge (provisional daily mean)",m³/s
+
+Date (MST),Parameter ,Value (m³/s),Approval Name,Grade Name
