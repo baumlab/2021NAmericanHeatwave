@@ -1,0 +1,11 @@
+﻿Real-time data - subject to revision
+Copyright Environment Canada(2022)
+
+"Real-Time Hydrometric Data for YUKON RIVER AT WHITEHORSE (09AB001) [YT]"
+
+09AB001,"YUKON RIVER AT WHITEHORSE"
+Description of parameters:
+6,"Discharge (provisional daily mean)",m³/s
+47,"Discharge (primary sensor derived)",m³/s
+
+Date (PST),Parameter ,Value (m³/s),Approval Name,Grade Name
