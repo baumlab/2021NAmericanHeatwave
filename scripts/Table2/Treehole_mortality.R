@@ -4,7 +4,7 @@ library(here)
 
 # Input here the folder path to input data
 input_folder <- 
-  here::here("streamflow_treeholes/input")
+  here::here("data/raw_data/Table2")
 
 inverts21 <-
   readr::read_csv(paste0(input_folder,
@@ -87,4 +87,4 @@ mean(mortality$mortality[which(mortality$year=="2022")]) #0.0805
 
 #=====output==========
 
-write_csv(mortality, "streamflow_treeholes/processed_data/treehole_invertebrate_mortality.csv")
+write_csv(mortality, "figures_tables/Table2/treehole_invertebrate_mortality.csv")
