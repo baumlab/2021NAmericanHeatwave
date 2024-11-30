@@ -145,16 +145,16 @@ set.seed(1)
 # Load source data
 
 # 10-day mean air temperature leading up to heat dome period
-Tair10_hist = raster("fig2_raster_data/pre_heatdome_norm_avg_Tavg.tif") # Historical
-Tair10_2021 = raster("fig2_raster_data/pre_2021heatdome_avg_Tavg.tif") # 2021
+Tair10_hist = raster("data/fig2_raster_data/pre_heatdome_norm_avg_Tavg.tif") # Historical
+Tair10_2021 = raster("data/fig2_raster_data/pre_2021heatdome_avg_Tavg.tif") # 2021
 
 # Avg surface temperature during period of heat dome; assumed = leaf temperature
-Tleaf_hist = raster("fig2_raster_data/heatdome_norm_avg_LST_proj.tif") # Historical
-Tleaf_2021 = raster("fig2_raster_data/heatdome_2021_avg_LST_proj.tif") # 2021
+Tleaf_hist = raster("data/fig2_raster_data/heatdome_norm_avg_LST_proj.tif") # Historical
+Tleaf_2021 = raster("data/fig2_raster_data/heatdome_2021_avg_LST_proj.tif") # 2021
 
 # Avg VPD during period of heat dome
-VPD_hist = raster("fig2_raster_data/heatdome_norm_avg_VPD.tif")
-VPD_2021 = raster("fig2_raster_data/heatdome_2021_avg_VPD.tif")
+VPD_hist = raster("data/fig2_raster_data/heatdome_norm_avg_VPD.tif")
+VPD_2021 = raster("data/fig2_raster_data/heatdome_2021_avg_VPD.tif")
 
 # Crop rasters
 b = as(extent(-2.1e6,1e5, -5e5,2.7e6), 'SpatialPolygons')

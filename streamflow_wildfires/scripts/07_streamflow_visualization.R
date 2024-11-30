@@ -201,9 +201,9 @@ b2<-grid.arrange(p, arrangeGrob(legend, pj1, pa1, nrow=3, padding = 1, heights =
 b2
 
 
-ggsave(b2, filename = "streamflow_treeholes/figures/regression.tiff", width = 10 , height = 7,device = tiff, dpi = 300)
-ggsave(pj1, filename = "streamflow_treeholes/figures/juneregression.tiff", device = tiff, dpi = 300)
-ggsave(pa1, filename = "streamflow_treeholes/figures/augregression.tiff", device = tiff, dpi = 300)
+ggsave(b2, filename = "figures_tables/raw figures/regression.tiff", width = 10 , height = 7,device = tiff, dpi = 300)
+ggsave(pj1, filename = "figures_tables/raw figures/juneregression.tiff", device = tiff, dpi = 300)
+ggsave(pa1, filename = "figures_tables/raw figures/augregression.tiff", device = tiff, dpi = 300)
 
-ggsave(p, dpi = 300, device = tiff, width = 20 , height = 15, filename = "streamflow_treeholes/figures/Stream_08NB005.tiff")
+ggsave(p, dpi = 300, device = tiff, width = 20 , height = 15, filename = "figures_tables/raw figures/Stream_08NB005.tiff")
 
