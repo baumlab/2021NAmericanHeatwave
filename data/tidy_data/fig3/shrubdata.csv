@@ -1,0 +1,107 @@
+﻿date,ecosystem,plant,transect_no,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,prop_full_scorch
+2021-05-10,submontane (ponderosa pine),prickly rose,1 (2017 unburned),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-05-14,submontane (ponderosa pine),prickly rose,1 (2017 unburned),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-05-21,submontane (ponderosa pine),prickly rose,1 (2017 unburned),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-05-28,submontane (ponderosa pine),prickly rose,1 (2017 unburned),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-06-03,submontane (ponderosa pine),prickly rose,1 (2017 unburned),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-06-11,submontane (ponderosa pine),prickly rose,1 (2017 unburned),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-06-18,submontane (ponderosa pine),prickly rose,1 (2017 unburned),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-06-25,submontane (ponderosa pine),prickly rose,1 (2017 unburned),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-07-05,submontane (ponderosa pine),prickly rose,1 (2017 unburned),0,0,0,1,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0.2
+2021-07-09,submontane (ponderosa pine),prickly rose,1 (2017 unburned),0,0,0,1,1,1,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0.25
+2021-07-15,submontane (ponderosa pine),prickly rose,1 (2017 unburned),0,0,1,1,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0.25
+2021-07-26,submontane (ponderosa pine),prickly rose,1 (2017 unburned),0,0,1,1,0,1,0,0,0,0,1,0,0,0,1,1,0,1,0,0,0.35
+2021-08-13,submontane (ponderosa pine),prickly rose,1 (2017 unburned),1,1,1,1,1,1,0,0,0,1,1,0,0,0,1,1,0,1,0,0,0.55
+2021-08-20,submontane (ponderosa pine),prickly rose,1 (2017 unburned),1,1,1,1,1,1,0,0,0,1,1,0,0,0,1,1,0,1,0,0,0.55
+2021-05-10,submontane (ponderosa pine),prickly rose,2 (2017 low severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-05-14,submontane (ponderosa pine),prickly rose,2 (2017 low severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-05-21,submontane (ponderosa pine),prickly rose,2 (2017 low severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-05-28,submontane (ponderosa pine),prickly rose,2 (2017 low severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-06-03,submontane (ponderosa pine),prickly rose,2 (2017 low severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-06-11,submontane (ponderosa pine),prickly rose,2 (2017 low severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-06-18,submontane (ponderosa pine),prickly rose,2 (2017 low severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-06-25,submontane (ponderosa pine),prickly rose,2 (2017 low severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-07-05,submontane (ponderosa pine),prickly rose,2 (2017 low severity),0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,1,0,0,0.15
+2021-07-09,submontane (ponderosa pine),prickly rose,2 (2017 low severity),0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,1,0,0,0.15
+2021-07-15,submontane (ponderosa pine),prickly rose,2 (2017 low severity),0,0,0,0,0,0,1,1,0,0,0,0,1,0,0,0,1,1,1,0,0.3
+2021-07-26,submontane (ponderosa pine),prickly rose,2 (2017 low severity),0,0,1,0,0,1,1,1,0,0,0,0,1,1,0,1,1,1,1,1,0.55
+2021-08-13,submontane (ponderosa pine),prickly rose,2 (2017 low severity),1,0,1,0,0,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,0.75
+2021-08-20,submontane (ponderosa pine),prickly rose,2 (2017 low severity),1,0,1,0,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,0.85
+2021-05-10,montane (interior Douglas-fir),prickly rose,6 (2017 high severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-05-17,montane (interior Douglas-fir),prickly rose,6 (2017 high severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-05-24,montane (interior Douglas-fir),prickly rose,6 (2017 high severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-05-31,montane (interior Douglas-fir),prickly rose,6 (2017 high severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-06-07,montane (interior Douglas-fir),prickly rose,6 (2017 high severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-06-14,montane (interior Douglas-fir),prickly rose,6 (2017 high severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-06-14,montane (interior Douglas-fir),prickly rose,6 (2017 high severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-06-21,montane (interior Douglas-fir),prickly rose,6 (2017 high severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-06-26,montane (interior Douglas-fir),prickly rose,6 (2017 high severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-07-05,montane (interior Douglas-fir),prickly rose,6 (2017 high severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-07-12,montane (interior Douglas-fir),prickly rose,6 (2017 high severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-07-19,montane (interior Douglas-fir),prickly rose,6 (2017 high severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-07-27,montane (interior Douglas-fir),prickly rose,6 (2017 high severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-08-10,montane (interior Douglas-fir),prickly rose,6 (2017 high severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-08-17,montane (interior Douglas-fir),prickly rose,6 (2017 high severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-08-23,montane (interior Douglas-fir),prickly rose,6 (2017 high severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-05-10,submontane (ponderosa pine),saskatoon,1 (2017 unburned),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-05-14,submontane (ponderosa pine),saskatoon,1 (2017 unburned),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-05-21,submontane (ponderosa pine),saskatoon,1 (2017 unburned),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-05-28,submontane (ponderosa pine),saskatoon,1 (2017 unburned),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-06-03,submontane (ponderosa pine),saskatoon,1 (2017 unburned),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-06-11,submontane (ponderosa pine),saskatoon,1 (2017 unburned),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-06-18,submontane (ponderosa pine),saskatoon,1 (2017 unburned),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-06-25,submontane (ponderosa pine),saskatoon,1 (2017 unburned),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-07-05,submontane (ponderosa pine),saskatoon,1 (2017 unburned),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-07-09,submontane (ponderosa pine),saskatoon,1 (2017 unburned),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-07-15,submontane (ponderosa pine),saskatoon,1 (2017 unburned),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-07-26,submontane (ponderosa pine),saskatoon,1 (2017 unburned),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-07-30,submontane (ponderosa pine),saskatoon,1 (2017 unburned),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-08-13,submontane (ponderosa pine),saskatoon,1 (2017 unburned),0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.05
+2021-08-20,submontane (ponderosa pine),saskatoon,1 (2017 unburned),0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.05
+2021-05-10,submontane (ponderosa pine),saskatoon,2 (2017 low severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-05-14,submontane (ponderosa pine),saskatoon,2 (2017 low severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-05-21,submontane (ponderosa pine),saskatoon,2 (2017 low severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-05-28,submontane (ponderosa pine),saskatoon,2 (2017 low severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-06-03,submontane (ponderosa pine),saskatoon,2 (2017 low severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-06-11,submontane (ponderosa pine),saskatoon,2 (2017 low severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-06-18,submontane (ponderosa pine),saskatoon,2 (2017 low severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-06-25,submontane (ponderosa pine),saskatoon,2 (2017 low severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-07-05,submontane (ponderosa pine),saskatoon,2 (2017 low severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-07-09,submontane (ponderosa pine),saskatoon,2 (2017 low severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-07-15,submontane (ponderosa pine),saskatoon,2 (2017 low severity),0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0.1
+2021-07-26,submontane (ponderosa pine),saskatoon,2 (2017 low severity),0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,1,0,1,1,0,0.3
+2021-07-30,submontane (ponderosa pine),saskatoon,2 (2017 low severity),0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,1,0,1,1,0,0.3
+2021-08-13,submontane (ponderosa pine),saskatoon,2 (2017 low severity),0,0,0,0,0,0,1,0,1,1,0,0,1,0,0,1,0,1,1,1,0.4
+2021-08-20,submontane (ponderosa pine),saskatoon,2 (2017 low severity),0,0,0,0,0,0,1,0,1,1,0,0,1,0,0,1,0,1,1,0,0.35
+2021-05-12,montane (interior Douglas-fir),saskatoon,5 (2017 low severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-05-17,montane (interior Douglas-fir),saskatoon,5 (2017 low severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-05-24,montane (interior Douglas-fir),saskatoon,5 (2017 low severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-05-31,montane (interior Douglas-fir),saskatoon,5 (2017 low severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-06-07,montane (interior Douglas-fir),saskatoon,5 (2017 low severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-06-14,montane (interior Douglas-fir),saskatoon,5 (2017 low severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-06-21,montane (interior Douglas-fir),saskatoon,5 (2017 low severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-06-26,montane (interior Douglas-fir),saskatoon,5 (2017 low severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-07-05,montane (interior Douglas-fir),saskatoon,5 (2017 low severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-07-12,montane (interior Douglas-fir),saskatoon,5 (2017 low severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-07-19,montane (interior Douglas-fir),saskatoon,5 (2017 low severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-07-26,montane (interior Douglas-fir),saskatoon,5 (2017 low severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-08-10,montane (interior Douglas-fir),saskatoon,5 (2017 low severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-08-17,montane (interior Douglas-fir),saskatoon,5 (2017 low severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-08-23,montane (interior Douglas-fir),saskatoon,5 (2017 low severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-05-12,montane (interior Douglas-fir),prickly rose,5 (2017 low severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-05-17,montane (interior Douglas-fir),prickly rose,5 (2017 low severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-05-24,montane (interior Douglas-fir),prickly rose,5 (2017 low severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-05-31,montane (interior Douglas-fir),prickly rose,5 (2017 low severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-06-07,montane (interior Douglas-fir),prickly rose,5 (2017 low severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-06-14,montane (interior Douglas-fir),prickly rose,5 (2017 low severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-06-21,montane (interior Douglas-fir),prickly rose,5 (2017 low severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-06-26,montane (interior Douglas-fir),prickly rose,5 (2017 low severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-07-05,montane (interior Douglas-fir),prickly rose,5 (2017 low severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-07-12,montane (interior Douglas-fir),prickly rose,5 (2017 low severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-07-19,montane (interior Douglas-fir),prickly rose,5 (2017 low severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-07-26,montane (interior Douglas-fir),prickly rose,5 (2017 low severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-08-10,montane (interior Douglas-fir),prickly rose,5 (2017 low severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-08-17,montane (interior Douglas-fir),prickly rose,5 (2017 low severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-08-23,montane (interior Douglas-fir),prickly rose,5 (2017 low severity),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-08-23,montane (interior Douglas-fir),prickly rose,4 (IDF unburned),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2021-08-23,montane (interior Douglas-fir),saskatoon,4 (IDF unburned),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
