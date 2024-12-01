@@ -30,7 +30,7 @@ Avg VPD during period of heat dome:
 
 **Figure 3 and Extended Data Table 2**
 
-*Script:*
+*Script:* "scripts/main_figures/fig3meta_analysis.R""
 
 *Input:*
 - "data/tidy_data/fig3/meta_analysis/heatdome_meta.csv"
