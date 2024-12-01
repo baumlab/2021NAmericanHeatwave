@@ -1,34 +1,34 @@
 # 2021NAmericanHeatwave
 This repository is for the synthesis paper 'Widespread ecological responses and cascading effects of the record-breaking 2021 western North American heatwave'
 
-##Reproduction of results, figures and tables
+## Reproduction of results, figures and tables
 
 
-*Figure 1
+**Figure 1**
 
 
-*Figure 2
+**Figure 2**
 
 
 Script: scripts/main_figures/fig_TPC_conceptual.R
 
 Input data: 
-# 10-day mean air temperature leading up to heat dome period
+10-day mean air temperature leading up to heat dome period:
 "fig2_raster_data/pre_heatdome_norm_avg_Tavg.tif" # Historical
 "fig2_raster_data/pre_2021heatdome_avg_Tavg.tif" # 2021
 
-# Avg surface temperature during period of heat dome; assumed = leaf temperature
+Avg surface temperature during period of heat dome; assumed = leaf temperature:
 "fig2_raster_data/heatdome_norm_avg_LST_proj.tif" # Historical
 "fig2_raster_data/heatdome_2021_avg_LST_proj.tif"# 2021
 
-# Avg VPD during period of heat dome
+Avg VPD during period of heat dome:
 "fig2_raster_data/heatdome_norm_avg_VPD.tif"# Historical
 "fig2_raster_data/heatdome_2021_avg_VPD.tif"# 2021
 
 Output figure: fig2.png
 
 
-*Figure 3 and Extended Data Table 2
+**Figure 3 and Extended Data Table 2**
 
 Script:
 
@@ -41,9 +41,9 @@ Output:
 extendeddatatable2.csv
 
 
-*Figure 4 is a photo montage, so no underlying data
+**Figure 4** is a photo montage, so no underlying data
 
-*Figure 5
+**Figure 5**
 
 Script: scripts/main_figures/fig5_GPP_map.R
 
@@ -63,8 +63,7 @@ Input data:
 Output figure: fig5.png
 
 
-
-*Figure 6
+**Figure 6**
 
 Scripts, to be run in numbered order, in scripts/streamflow_scripts:
 
