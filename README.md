@@ -110,80 +110,80 @@ Output:"supplemental_algae.jpg"
 ### Step 1: The raw data provided by data providers was tidied as follows:
 
 **Aphids**\
-*Script:* "scripts/processing/figure 3/fig3_aphids-on-berries.R"
-*Input:* "/tidy_data/aphids-on-berries.csv"
-*Output:* "/tidy_data/meta_analysis/aphids_meta.Rdata"
+*Script:* "scripts/processing/figure 3/fig3_aphids-on-berries.R"\
+*Input:* "/tidy_data/aphids-on-berries.csv"\
+*Output:* "/tidy_data/meta_analysis/aphids_meta.Rdata"\
 
 **Balanus**\
-*Script:* "scripts/processing/figure 3/fig3_balanus_shade_vs_sun.R"
-*Input:* "tidy_data/balanus_mortality_pruth.csv"
+*Script:* "scripts/processing/figure 3/fig3_balanus_shade_vs_sun.R"\
+*Input:* "tidy_data/balanus_mortality_pruth.csv"\
 *Output:* 
 - "tidy_data/meta_analysis/balanus_meta.Rdata"
 - "figures/fig3_balanus_pruthbay_by_exposure.jpg"
 
 **Bats**\
-*Script:* "scripts/processing/figure 3/fig3_condensed_bat-data.R"
-*Input:* "data/tidy_data/fig3/bat.2020.2021.short.csv"
-*Output:* "./tidy_data/meta_analysis/bat_meta.Rdata"
+*Script:* "scripts/processing/figure 3/fig3_condensed_bat-data.R"\
+*Input:* "data/tidy_data/fig3/bat.2020.2021.short.csv"\
+*Output:* "./tidy_data/meta_analysis/bat_meta.Rdata"\
 
 **Hawks**\
-*Script:* "scripts/processing/figure 3/fig3_hawks.R"
-*Input:* tidy_data/FEHAall2020_2022_distancetravelledovertime_filledin_June25toJuly7.csv"
+*Script:* "scripts/processing/figure 3/fig3_hawks.R"\
+*Input:* tidy_data/FEHAall2020_2022_distancetravelledovertime_filledin_June25toJuly7.csv"\
 *Output:* 
 - "figures/maggie_proto/hawk_fig.png"
 - "tidy_data/meta_analysis/hawks_meta.Rdata"
 
 **Honeybee**\
-*Script:* "scripts/processing/figure 3/fig3_honeybees.R"
-*Input:* "tidy_data/hive-weight-summary-by-period.csv"
+*Script:* "scripts/processing/figure 3/fig3_honeybees.R"\
+*Input:* "tidy_data/hive-weight-summary-by-period.csv"\
 *Output:* 
 - "figures/maggie_proto/bee_fig.png"
 - "tidy_data/meta_analysis/honeybee_meta.RData"
 
 **Interior shrubs**\
-*Script:* "scripts/processing/figure 3/fig3_interior_shrubs.R"
-*Input:* "Heat dome impactsv2.csv"
+*Script:* "scripts/processing/figure 3/fig3_interior_shrubs.R"\
+*Input:* "Heat dome impactsv2.csv"\
 *Output:* 
 - "tidy_data/meta_analysis/interiorshrubMAS_meta.RData"
 
 **Lupines**\
-*Script:* "scripts/processing/figure 3/fig3_lupines_fruits.R"
-*Input:* "tidy_data/LUPLATheatdome_fruits_20_21.csv"
+*Script:* "scripts/processing/figure 3/fig3_lupines_fruits.R"\
+*Input:* "tidy_data/LUPLATheatdome_fruits_20_21.csv"\
 *Output:* 
 -"figures/maggie_proto/lupine_fig.png"
 - "tidy_data/meta_analysis/lupine_meta.Rdata"
 
 **Mammals**\
-*Script:* "scripts/processing/figure 3/fig3_mammals.R"
-*Input:* "tidy_data/ct_hd_temp_v_detections_fig_data.csv"
+*Script:* "scripts/processing/figure 3/fig3_mammals.R"\
+*Input:* "tidy_data/ct_hd_temp_v_detections_fig_data.csv"\
 *Output:* 
 -"figures/maggie_proto/detection_fig.png"
 - "figures/maggie_proto/detection_moose_fig.png"
 - "tidy_data/meta_analysis/mammals_meta.Rdata"
 
 **Mytilus**\
-*Script:* "scripts/processing/figure 3/fig3_mytilus_mortality_under_fucus.R"
-*Input:* "tidy_data/mytilus_mortality.csv"
+*Script:* "scripts/processing/figure 3/fig3_mytilus_mortality_under_fucus.R"\
+*Input:* "tidy_data/mytilus_mortality.csv"\
 *Output:* 
 -"figures/fig3_mytilus_mortality_fucus_presence.jpg"
 - "figures/maggie_proto/myt_fig.png"
 - "tidy_data/meta_analysis/mytilus_meta.Rdata"
 
 **Nucella**\
-*Script:* "scripts/processing/figure 3/fig3_nucella_mortality.R"
-*Input:* "tidy_data/nucella_mortality.csv"
+*Script:* "scripts/processing/figure 3/fig3_nucella_mortality.R"\
+*Input:* "tidy_data/nucella_mortality.csv"\
 *Output:* 
 - "figures/nucella_mort_pre_vs_post.jpg"
 - "tidy_data/meta_analysis/nucella_meta.Rdata"
 
 **Phyllospadix**\
-*Script:* "scripts/processing/figure 3/fig3_phyllospadix_calvert.R"
-*Input:* "tidy_data/Hakai_surfgrass_density_flowering.csv"
+*Script:* "scripts/processing/figure 3/fig3_phyllospadix_calvert.R"\
+*Input:* "tidy_data/Hakai_surfgrass_density_flowering.csv"\
 *Output:* 
 - "tidy_data/meta_analysis/phyllospadix_meta.Rdata"
 
 **Scoter**\
-*Script:* "scripts/processing/figure 3/fig3_surf_scoter.R"
+*Script:* "scripts/processing/figure 3/fig3_surf_scoter.R"\
 *Input:* "tidy_data/surf_scoter2021.csv"   ***raw data folder empty
 *Output:* 
 - "figures/surfscoter_deltasd_binary.png"
@@ -191,7 +191,7 @@ Output:"supplemental_algae.jpg"
 - "tidy_data/meta_analysis/scoter_meta.RData"
 
 **Semibalanus**\
-*Script:* "scripts/processing/figure 3/fig3_semibalanus.R"
+*Script:* "scripts/processing/figure 3/fig3_semibalanus.R"\
 *Input:*
 - "./raw_data/semibalanus/SBHW_SHADE_surveys.csv"  ***raw data folder empty
 - "./raw_data/semibalanus/SBHW_SHADE_PlotInfo.csv"
@@ -199,15 +199,15 @@ Output:"supplemental_algae.jpg"
 - "./tidy_data/meta_analysis/semibalanus_meta.Rdata"
 
 **Songbirds**\
-*Script:* "scripts/processing/figure 3/fig3_semibalanus.R"
+*Script:* "scripts/processing/figure 3/fig3_semibalanus.R"\
 *Input:*
 - "tidy_data/passerine_BirdNET_2021.csv"  ***raw data folder empty
 *Output:* 
 - "tidy_data/meta_analysis/songbirds_meta.Rdata"
 
 **Algae**\
-*Script:* "scripts/processing/figure 3/fig3_baumlab-algae.R"
-*Input:* "./raw_data/heatdome_seaweeds_baumlab.csv"
+*Script:* "scripts/processing/figure 3/fig3_baumlab-algae.R"\
+*Input:* "./raw_data/heatdome_seaweeds_baumlab.csv"\
 *Output:* 
 - "tidy_data/meta_analysis/algae_meta.Rdata"
 
