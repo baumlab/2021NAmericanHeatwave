@@ -10,9 +10,9 @@ This repository is for the synthesis paper 'Widespread ecological responses and 
 **Figure 2**
 
 
-Script: scripts/main_figures/fig_TPC_conceptual.R
+*Script:* scripts/main_figures/fig_TPC_conceptual.R
 
-Input data: 
+*Input data:* 
 10-day mean air temperature leading up to heat dome period:
 "fig2_raster_data/pre_heatdome_norm_avg_Tavg.tif" # Historical
 "fig2_raster_data/pre_2021heatdome_avg_Tavg.tif" # 2021
@@ -25,18 +25,18 @@ Avg VPD during period of heat dome:
 "fig2_raster_data/heatdome_norm_avg_VPD.tif"# Historical
 "fig2_raster_data/heatdome_2021_avg_VPD.tif"# 2021
 
-Output figure: fig2.png
+*Output figure:* fig2.png
 
 
 **Figure 3 and Extended Data Table 2**
 
-Script:
+*Script:*
 
-Input:
+*Input:*
 - "data/tidy_data/fig3/meta_analysis/heatdome_meta.csv"
 (the construction of this dataset is detailed below under "Meta-analysis")
 
-Output:
+*Output:*
 - figures/fig3.png
 - extendeddatatable2.csv
 
@@ -45,9 +45,9 @@ Output:
 
 **Figure 5**
 
-Script: scripts/main_figures/fig5_GPP_map.R
+*Script:* scripts/main_figures/fig5_GPP_map.R
 
-Input data: 
+*Input data:* 
 10-day mean air temperature leading up to heat dome period:
 "fig2_raster_data/pre_heatdome_norm_avg_Tavg.tif" # Historical
 "fig2_raster_data/pre_2021heatdome_avg_Tavg.tif" # 2021
@@ -60,12 +60,12 @@ Avg VPD during period of heat dome:
 "fig2_raster_data/heatdome_norm_avg_VPD.tif"# Historical
 "fig2_raster_data/heatdome_2021_avg_VPD.tif"# 2021
 
-Output figure: fig5.png
+*Output figure:* fig5.png
 
 
 **Figure 6**
 
-Scripts, to be run in numbered order, in scripts/streamflow_scripts:
+*Scripts*, to be run in numbered order, in scripts/streamflow_scripts:
 
 - 01_Hydro_station_metadata
 - 02_streamflow
@@ -77,7 +77,7 @@ Scripts, to be run in numbered order, in scripts/streamflow_scripts:
  
 then run: scripts/main_figures/fig6_wildfire_area_and_streamflow
 
-Input data:
+*Input data:*
 
 - data/streamflow_wildfires/input/Hydro_station_metadata.csv
 - data/streamflow_wildfires/input/week_before_htdome_daymet_tmax.tif
@@ -93,10 +93,10 @@ Input data:
 - watersheds/WSC_Basinsgdb/ [all files]
 - waterflow_2021/ [all files]
 
-Intermediate data object (facilitates recreation of regression models):
+*Intermediate data object* (facilitates recreation of regression models):
 - data/streamflow_wildfires/processed_data/xvar_streamflow.csv
 
-Output:
+*Output:*
 - regression.tif
 - Figure6.tiff
 
