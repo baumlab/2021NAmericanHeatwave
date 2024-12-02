@@ -166,7 +166,7 @@ then run: scripts/main_figures/fig6_wildfire_area_and_streamflow
 
 **Interior shrubs**\
 *Script:* "scripts/processing/figure 3/fig3_interior_shrubs.R"\
-*Input:* "Heat dome impactsv2.csv"\     Katie Goodwin
+*Input:* "Heat dome impactsv2.csv"    Katie Goodwin\
 *Output:* "data/tidy_data/fig3/meta_analysis/interiorshrubMAS_meta.RData"
 
 **Lupines**\
