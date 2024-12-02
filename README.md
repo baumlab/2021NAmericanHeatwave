@@ -7,6 +7,7 @@ This repository is for the synthesis paper 'Widespread ecological responses and 
 **Figure 1**
 
 *Script:* [Sang: please insert name and location of script]
+
 *Output:* figures/tables/fig1 contains....[Sang: please insert description of what these many files are]
 
 
@@ -16,14 +17,17 @@ This repository is for the synthesis paper 'Widespread ecological responses and 
 
 *Input data:* 
 10-day mean air temperature leading up to heat dome period:
+
 "data/fig2_raster_data/pre_heatdome_norm_avg_Tavg.tif" # Historical
 "data/fig2_raster_data/pre_2021heatdome_avg_Tavg.tif" # 2021
 
 Avg surface temperature during period of heat dome; assumed = leaf temperature:
+
 "data/fig2_raster_data/heatdome_norm_avg_LST_proj.tif" # Historical
 "data/fig2_raster_data/heatdome_2021_avg_LST_proj.tif"# 2021
 
 Avg VPD during period of heat dome:
+
 "data/fig2_raster_data/heatdome_norm_avg_VPD.tif"# Historical
 "data/fig2_raster_data/heatdome_2021_avg_VPD.tif"# 2021
 
@@ -35,7 +39,7 @@ Avg VPD during period of heat dome:
 *Script:* "scripts/main_figures/fig3meta_analysis.R""
 
 *Input:*
-- "data/tidy_data/fig3/meta_analysis/heatdome_meta.csv"
+- "data/tidy_data/fig3/meta_analysis/heatdome_meta.csv"\
 (the construction of this dataset is detailed in Steps 1&2 under "Meta-analysis")
 
 *Output:*
@@ -51,16 +55,19 @@ Avg VPD during period of heat dome:
 
 *Input data:* 
 10-day mean air temperature leading up to heat dome period:
-"data/fig2_raster_data/pre_heatdome_norm_avg_Tavg.tif" # Historical
-"data/fig2_raster_data/pre_2021heatdome_avg_Tavg.tif" # 2021
+
+- "data/fig2_raster_data/pre_heatdome_norm_avg_Tavg.tif" # Historical
+- "data/fig2_raster_data/pre_2021heatdome_avg_Tavg.tif" # 2021
 
 Avg surface temperature during period of heat dome; assumed = leaf temperature:
-"data/fig2_raster_data/heatdome_norm_avg_LST_proj.tif" # Historical
-"data/fig2_raster_data/heatdome_2021_avg_LST_proj.tif"# 2021
+
+- "data/fig2_raster_data/heatdome_norm_avg_LST_proj.tif" # Historical
+- "data/fig2_raster_data/heatdome_2021_avg_LST_proj.tif"# 2021
 
 Avg VPD during period of heat dome:
-"data/fig2_raster_data/heatdome_norm_avg_VPD.tif"# Historical
-"data/fig2_raster_data/heatdome_2021_avg_VPD.tif"# 2021
+
+- "data/fig2_raster_data/heatdome_norm_avg_VPD.tif"# Historical
+- "data/fig2_raster_data/heatdome_2021_avg_VPD.tif"# 2021
 
 *Output figure:* fig5.png
 
@@ -117,7 +124,7 @@ then run: scripts/main_figures/fig6_wildfire_area_and_streamflow
 
 *Script:* "scripts/processing/figure 3/fig3_honeybees.R"\
 *Input:* "data/tidy_data/fig3/all.hives.2.filtered.csv"\
-*Output:* "figures_tables/supplement/hive-ambient-temp.png"\
+*Output:* "figures_tables/supplement/hive-ambient-temp.png"
 
 **Extended Data Figure 5** this is a photomontage so no data compilation
 
@@ -131,7 +138,7 @@ then run: scripts/main_figures/fig6_wildfire_area_and_streamflow
 **Aphids**\
 *Script:* "scripts/processing/figure 3/fig3_aphids-on-berries.R"\
 *Input:* "data/tidy_data/fig3/aphids-on-berries.csv"\
-*Output:* "data/tidy_data/fig3/meta_analysis/aphids_meta.Rdata"\
+*Output:* "data/tidy_data/fig3/meta_analysis/aphids_meta.Rdata"
 
 **Balanus**\
 *Script:* "scripts/processing/figure 3/fig3_balanus_shade_vs_sun.R"\
@@ -143,7 +150,7 @@ then run: scripts/main_figures/fig6_wildfire_area_and_streamflow
 **Bats**\
 *Script:* "scripts/processing/figure 3/fig3_condensed_bat-data.R"\
 *Input:* "data/tidy_data/fig3/bat.2020.2021.short.csv"\
-*Output:* "data/tidy_data/fig3/meta_analysis/bat_meta.Rdata"\
+*Output:* "data/tidy_data/fig3/meta_analysis/bat_meta.Rdata"
 
 **Hawks**\
 *Script:* "scripts/processing/figure 3/fig3_hawks.R"\
@@ -194,7 +201,7 @@ then run: scripts/main_figures/fig6_wildfire_area_and_streamflow
 
 **Scoter**\
 *Script:* "scripts/processing/figure 3/fig3_surf_scoter.R"\
-*Input:* "data/tidy_data/fig3/full_scoter.csv"
+*Input:* "data/tidy_data/fig3/full_scoter.csv"\
 *Output:* 
 - "figures_tables/raw figures/surfscoter_deltasd_binary.png"
 - "figures_tables/raw figures/surfscoter_deltacts.png"
@@ -211,13 +218,13 @@ then run: scripts/main_figures/fig6_wildfire_area_and_streamflow
 **Songbirds**\
 *Script:* "scripts/processing/figure 3/fig3_semibalanus.R"\
 *Input:*
-- "data/tidy_data/fig3/passerine_BirdNET_2021.csv"
+- "data/tidy_data/fig3/passerine_BirdNET_2021.csv"\
 *Output:* 
 - "data/tidy_data/fig3/meta_analysis/songbirds_meta.Rdata"
 
 **Algae**\
 *Script:* "scripts/processing/figure 3/fig3_baumlab-algae.R"\
-*Input:* "./raw_data/heatdome_seaweeds_baumlab.csv"\     Sandra Emry
+*Input:* "./raw_data/heatdome_seaweeds_baumlab.csv"     Sandra Emry\
 *Output:* "data/tidy_data/fig3/meta_analysis/algae_meta.Rdata"
 
 "figure 3"" scripts not used in meta-analysis:
