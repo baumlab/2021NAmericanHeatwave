@@ -3,13 +3,13 @@ library(tidyverse)
 
 #read in stations and temperature changes tif
 
-md.active<-read_csv("streamflow_treeholes/processed_data/md_active.csv")
+md.active<-read_csv("data/streamflow_wildfires/processed_data/md_active.csv")
 
-temp_changes <- rast('streamflow_treeholes/input/week_before_htdome_daymet_tmax.tif')
-air_anom_mean<-rast("streamflow_treeholes/input/tmax_deviation_new5days.tif")
-air_anom_max<-rast("streamflow_treeholes/input/tmax_deviation_max_new5days.tif")
-surface_anom_mean<-rast("streamflow_treeholes/input/lst_deviation_new5days.tif")
-surface_anom_max<-rast("streamflow_treeholes/input/lst_max_deviation_new5days2.tif")
+temp_changes <- rast('data/streamflow_wildfires/input/week_before_htdome_daymet_tmax.tif')
+air_anom_mean<-rast("data/streamflow_wildfires/input/tmax_deviation_new5days.tif")
+air_anom_max<-rast("data/streamflow_wildfires/input/tmax_deviation_max_new5days.tif")
+surface_anom_mean<-rast("data/streamflow_wildfires/input/lst_deviation_new5days.tif")
+surface_anom_max<-rast("data/streamflow_wildfires/input/lst_max_deviation_new5days2.tif")
 
 
 #extract the lat and long for 212 stations
@@ -98,9 +98,9 @@ all_temp<-temp_change_loc %>%
 
 #=== outputs ==========
 
-write_csv(temp_change_loc, "streamflow_treeholes/processed_data/temp_change_loc.csv")
-write_csv(air_anom_mean_loc, "streamflow_treeholes/processed_data/air_anom_mean_loc.csv")
-write_csv(air_anom_max_loc, "streamflow_treeholes/processed_data/air_anom_max_loc.csv")
-write_csv(surface_anom_mean_loc, "streamflow_treeholes/processed_data/surface_anom_mean_loc.csv")
-write_csv(surface_anom_max_loc, "streamflow_treeholes/processed_data/surface_anom_max_loc.csv")
-write_csv(all_temp, "streamflow_treeholes/processed_data/all_temp.csv")
+write_csv(temp_change_loc, "data/streamflow_wildfires/processed_data/temp_change_loc.csv")
+write_csv(air_anom_mean_loc, "data/streamflow_wildfires/processed_data/air_anom_mean_loc.csv")
+write_csv(air_anom_max_loc, "data/streamflow_wildfires/processed_data/air_anom_max_loc.csv")
+write_csv(surface_anom_mean_loc, "data/streamflow_wildfires/processed_data/surface_anom_mean_loc.csv")
+write_csv(surface_anom_max_loc, "data/streamflow_wildfires/processed_data/surface_anom_max_loc.csv")
+write_csv(all_temp, "data/streamflow_wildfires/processed_data/all_temp.csv")

@@ -7,7 +7,7 @@ library(here)
 
 # load & clean data -------------------------------------------------------
 
-fucus_cover_mytilus_raw <- read_csv(here("tidy_data", "mytilus_mortality.csv"))
+fucus_cover_mytilus_raw <- read_csv(here("data/tidy_data/fig3", "mytilus_mortality.csv"))
 
 # calculate percent mortality
 fucus_cover_mytilus <- fucus_cover_mytilus_raw %>% 
@@ -27,7 +27,7 @@ mussel_mort <- ggplot(data = fucus_cover_mytilus) +
   theme_classic() + 
   theme(legend.position = "none")
 
-ggsave("./figures/fig3_mytilus_mortality_fucus_presence.jpg", plot = mussel_mort)
+ggsave("figures_tables/raw figures/fig3_mytilus_mortality_fucus_presence.jpg", plot = mussel_mort)
 
 
 # reformat for meta-analysis ----------------------------------------------
@@ -61,7 +61,7 @@ mytilus_meta$dates_control <- fucus_cover_mytilus_raw %>%
 mytilus_meta$dates_treatment <- fucus_cover_mytilus_raw %>% 
   distinct(date)
 
-save(mytilus_meta, file="./tidy_data/meta_analysis/mytilus_meta.Rdata")
+save(mytilus_meta, file="data/tidy_data/fig3/meta_analysis/mytilus_meta.Rdata")
 
   
 # Maggie proto figure  ----------------------------------------------------

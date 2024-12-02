@@ -7,7 +7,7 @@ library(tidyverse)
 
 ##################### Tidy Data provided by Hakai ########################
 
-phyllo <- read_csv("./tidy_data/Hakai_surfgrass_density_flowering.csv")
+phyllo <- read_csv("data/tidy_data/fig3/Hakai_surfgrass_density_flowering.csv")
 
 # head(phyllo)
 
@@ -88,7 +88,7 @@ phyllo_meta$dates_treatment <- phyllo %>%
   distinct(date) %>% 
   as.vector()
   
-save(phyllo_meta, file="./tidy_data/meta_analysis/phyllospadix_meta.Rdata")
+save(phyllo_meta, file="data/tidy_data/fig3/meta_analysis/phyllospadix_meta.Rdata")
 
 
 

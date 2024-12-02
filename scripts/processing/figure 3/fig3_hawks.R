@@ -4,7 +4,7 @@ library(raster)
 library(tidyverse)
 
 #data wrangling from Lionel/Erin
-traveldistances<-read.csv("tidy_data/FEHAall2020_2022_distancetravelledovertime_filledin_June25toJuly7.csv", header=TRUE)
+traveldistances<-read.csv("data/tidy_data/fig3/FEHAall2020_2022_distancetravelledovertime_filledin_June25toJuly7.csv", header=TRUE)
 traveldistances$year.f<-as.factor(traveldistances$year)#convert year to factor
 
 #drop 2022
@@ -149,6 +149,6 @@ hawks_meta<-dplyr::select(metadatadf, response_id, unique_species, study_id, com
 
 
 #save as Rdata
-save(hawks_meta, file="tidy_data/meta_analysis/hawks_meta.Rdata")
+save(hawks_meta, file="data/tidy_data/fig3/meta_analysis/hawks_meta.Rdata")
 
 

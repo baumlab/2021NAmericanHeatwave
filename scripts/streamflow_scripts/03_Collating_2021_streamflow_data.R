@@ -10,13 +10,13 @@ library(lubridate) ## Deal with dates
 # Input here the folder path to input data
 
 input_folder <- 
-  here::here("streamflow_treeholes")
+  here::here("data/streamflow_wildfires")
 
 
 # Compile  data ----------------------------------------------------
 # Make list of all files within the directory with streamflow data
 file_list <- 
-  dir(path = "streamflow_treeholes/waterflow_2021")
+  dir(path = "data/streamflow_wildfires/waterflow_2021")
 
 # Make empty list where all plots will be saved
 plot_list <- 
@@ -35,7 +35,7 @@ for(i in file_list){
   
   ## Read file into R
   dats <- 
-    read.csv(paste0("/Users/sandraemry/Documents/HD_Baum/heatdome/streamflow_treeholes/waterflow_2021/",
+    read.csv(paste0("data/streamflow_wildfires/waterflow_2021",
                     i), skip = 10)## Remove rows with not useful information
  
    zone<- colnames(dats)[1] %>% 
@@ -104,7 +104,7 @@ all_dats <- all_dats %>%
 
 # Save all data
 write.csv(all_dats,
-          "streamflow_treeholes/processed_data/waterflow2021_dailymean.csv",
+          "data/streamflow_wildfires/processed_data/waterflow2021_dailymean.csv",
           row.names = F) ## default saves row numbers as row names, and we dont want that!
 
   

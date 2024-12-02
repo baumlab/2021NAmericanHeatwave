@@ -1,60 +1,7 @@
 pacman::p_load(tidyverse, lme4, sf, rnaturalearth, rnaturalearthdata, viridis)
 
-#read in all the files----
-bcba <- read_csv("raw_data/surf scoter/historical_bcba.csv") %>% mutate(site="bcba")
-bcbr <- read_csv("raw_data/surf scoter/historical_bcbr.csv") %>% mutate(site="bcbr")
-bcci <- read_csv("raw_data/surf scoter/historical_bcci.csv") %>% mutate(site="bcci")
-bcco <- read_csv("raw_data/surf scoter/historical_bcco.csv") %>% mutate(site="bcco")
-bcdb <- read_csv("raw_data/surf scoter/historical_bcdb.csv") %>% mutate(site="bcdb")
-bcde <- read_csv("raw_data/surf scoter/historical_bcde.csv") %>% mutate(site="bcde")
-bcdu <- read_csv("raw_data/surf scoter/historical_bcdu.csv") %>% mutate(site="bcdu")
-bcgs <- read_csv("raw_data/surf scoter/historical_bcgs.csv") %>% mutate(site="bcgs")
-bche <- read_csv("raw_data/surf scoter/historical_bche.csv") %>% mutate(site="bche")
-bcki <- read_csv("raw_data/surf scoter/historical_bcki.csv") %>% mutate(site="bcki")
-bcla <- read_csv("raw_data/surf scoter/historical_bcla.csv") %>% mutate(site="bcla")
-bclh <- read_csv("raw_data/surf scoter/historical_bclh.csv") %>% mutate(site="bclh")
-bclq <- read_csv("raw_data/surf scoter/historical_bclq.csv") %>% mutate(site="bclq")
-bcma <- read_csv("raw_data/surf scoter/historical_bcma.csv") %>% mutate(site="bcma")
-bcnb <- read_csv("raw_data/surf scoter/historical_bcnb.csv") %>% mutate(site="bcnb")
-bcnn <- read_csv("raw_data/surf scoter/historical_bcnn.csv") %>% mutate(site="bcnn")
-bcpa <- read_csv("raw_data/surf scoter/historical_bcpa.csv") %>% mutate(site="bcpa")
-bcpi <- read_csv("raw_data/surf scoter/historical_bcpi.csv") %>% mutate(site="bcpi")
-bcpo <- read_csv("raw_data/surf scoter/historical_bcpo.csv") %>% mutate(site="bcpo")
-bcpq <- read_csv("raw_data/surf scoter/historical_bcpq.csv") %>% mutate(site="bcpq")
-bcrs <- read_csv("raw_data/surf scoter/historical_bcrs.csv") %>% mutate(site="bcrs")
-bcsc <- read_csv("raw_data/surf scoter/historical_bcsc.csv") %>% mutate(site="bcsc")
-bcsi <- read_csv("raw_data/surf scoter/historical_bcsi.csv") %>% mutate(site="bcsi")
-bcso <- read_csv("raw_data/surf scoter/historical_bcso.csv") %>% mutate(site="bcso")
-bcss <- read_csv("raw_data/surf scoter/historical_bcss.csv") %>% mutate(site="bcss")
-bctl <- read_csv("raw_data/surf scoter/historical_bctl.csv") %>% mutate(site="bctl")
-bcva <- read_csv("raw_data/surf scoter/historical_bcva.csv") %>% mutate(site="bcva") %>%
-  rename(year_normal=normal_year)
-bcvi <- read_csv("raw_data/surf scoter/historical_bcvi.csv") %>% mutate(site="bcvi")
-bcwr <- read_csv("raw_data/surf scoter/historical_bcwr.csv") %>% mutate(site="bcwr")
-
-tot_2021 <- read_csv("tidy_data/surf_scoter2021.csv") 
-
-#turn them into one spreadsheet
-hist_scoter <- rbind(bcba, bcbr, bcci, bcco,  bcdb, bcde, bcdu, bcgs, bche, bcki, 
-                     bcla, bclh, bclq, bcma, bcnb, bcnn, bcpa, bcpi, bcpo, bcpq, 
-                     bcrs, bcsc, bcsi, bcso, bcss, bctl, bcva, bcvi, bcwr) %>%
-  rename(site_code = site, 
-         species_code = SPECIES_CODE,
-         count = NumberByPartyHours) %>%
-  select(site_code, count, year_normal)
-curr_scoter <- tot_2021 %>%
-  rename(count = `count/hours`) %>%
-  select(site_code, count, year_normal)
-#the master dataset
-#full_scoter <- rbind(hist_scoter, curr_scoter) %>%
-#  mutate(heatdome = case_when(year_normal %in% 2021 ~ "yes", 
- #                   TRUE ~ "no"))
-
-#write_csv(full_scoter, "full_scoter.csv")
-
-
 #read in full dataset---- 
-full_scoter<-read.csv("tidy_data/full_scoter.csv")
+full_scoter<-read.csv("data/tidy_data/fig3/full_scoter.csv")
 
 #lat lon coords for each site
 coord <- tot_2021 %>%
@@ -112,7 +59,7 @@ ggplot(data=world)+
   coord_sf(xlim = c(-132.5,-122.5), ylim= c(47, 54.5))+ theme_bw()+
   labs(colour="Change from historic")
 
-ggsave("figures/surfscoter_deltacts.png")
+ggsave("figures_tables/raw figures/surfscoter_deltacts.png")
 
 ggplot(data=world)+
   geom_sf()+
@@ -120,7 +67,7 @@ ggplot(data=world)+
   scale_colour_viridis(option="D" , discrete=TRUE)+
   coord_sf(xlim = c(-132.5,-122.5), ylim= c(47, 54.5))
 
-ggsave("figures/surfscoter_deltasd_binary.png")
+ggsave("figures_tables/raw figures/surfscoter_deltasd_binary.png")
 
 #make a boxplot version 
 comp<-mutate(comp, year=factor(year,levels=c("historical", "2021")))
@@ -203,7 +150,7 @@ scoter_meta <- mean_comp %>%
             dates_control = "mean 1986 to 2020",
             date_treatment = "2021")
 
-save(scoter_meta, file="./tidy_data/meta_analysis/scoter_meta.RData")
+save(scoter_meta, file="data/tidy_data/fig3/meta_analysis/scoter_meta.RData")
 
 
 

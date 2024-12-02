@@ -31,7 +31,7 @@ library(scales)
 #The dominant aphid species on blueberry is Ericaphis fimbriata and 
 #the aphid on raspberry is Amphorophora agathonica.
 
-aphids <- read.csv("./tidy_data/aphids-on-berries.csv",
+aphids <- read.csv("data/tidy_data/fig3/aphids-on-berries.csv",
                   stringsAsFactors=FALSE, strip.white=TRUE, na.strings=c("NA", "")) 
 
 
@@ -147,7 +147,7 @@ aphids_meta$dates_treatment <- raspberries %>%
   mutate(date = as.character(date)) %>% 
   as.vector()
 
-save(aphids_meta, file="./tidy_data/meta_analysis/aphids_meta.Rdata")
+save(aphids_meta, file="data/tidy_data/fig3/meta_analysis/aphids_meta.Rdata")
 
 ### how many sampling dates were there? 
 

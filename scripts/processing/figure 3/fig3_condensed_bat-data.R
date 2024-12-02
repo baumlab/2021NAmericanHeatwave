@@ -160,5 +160,5 @@ bat_meta$dates_treatment[2] <- bat.2022.long.total %>%
   mutate(DATE = as.character(DATE)) %>% 
   as.vector(.)
 
-save(bat_meta, file="./tidy_data/meta_analysis/bat_meta.Rdata")  
+save(bat_meta, file="data/tidy_data/fig3/meta_analysis/bat_meta.Rdata")  
            

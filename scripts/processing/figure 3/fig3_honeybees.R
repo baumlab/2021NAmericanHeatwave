@@ -33,7 +33,7 @@ library(tidyverse)
 library(lmerTest)
 library(lme4)
 
-hive.weight.summary.3b <- read.csv("tidy_data/hive-weight-summary-by-period.csv",
+hive.weight.summary.3b <- read.csv("data/tidy_data/fig3/hive-weight-summary-by-period.csv",
                                    stringsAsFactors=FALSE, strip.white=TRUE, na.strings=c("NA", "")) 
 
 str(hive.weight.summary.3b)
@@ -101,7 +101,7 @@ anova(hive.growth.lmer)
 ### 
 ##################################################
 
-hives2 <- read.csv("/Users/michelletseng/Desktop/heat-dome-working-group/honey-bee-data/all.hives.2.filtered.csv",
+hives2 <- read.csv("data/tidy_data/fig3/all.hives.2.filtered.csv",
                    stringsAsFactors=FALSE, strip.white=TRUE, na.strings=c("NA", "")) 
 
 str(hives2)
@@ -267,5 +267,5 @@ hive_metap <- hive_meta1 %>%
 # combine 2 comparisons
 hive_meta <- rbind(hive_metad, hive_metap)
 
-save(hive_meta, file="./tidy_data/meta_analysis/honeybee_meta.RData")
+save(hive_meta, file="data/tidy_data/fig3/meta_analysis/honeybee_meta.RData")
 

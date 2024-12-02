@@ -4,7 +4,7 @@ library(tidyr)
 library(stringr) 
 library(lubridate) ## Deal with dates
 
-all_dats<-read_csv("streamflow_treeholes/processed_data/waterflow2021_dailymean.csv")
+all_dats<-read_csv("data/streamflow_wildfires/processed_data/waterflow2021_dailymean.csv")
 
 #flow_all<- read_csv("flow_all.csv")
 
@@ -136,7 +136,7 @@ all_flow <- dome_means %>%
 
 #=== output ==========
 
-write_csv(june_mean, "streamflow_treeholes/processed_data/june_mean.csv")
-write_csv(june_2wkmean, "streamflow_treeholes/processed_data/june_2wkmean.csv")
-write_csv(aug_mean, "streamflow_treeholes/processed_data/aug_mean.csv")
-write_csv(all_flow, "streamflow_treeholes/processed_data/all_flow.csv")
+write_csv(june_mean, "data/streamflow_wildfires/processed_data/june_mean.csv")
+write_csv(june_2wkmean, "data/streamflow_wildfires/processed_data/june_2wkmean.csv")
+write_csv(aug_mean, "data/streamflow_wildfires/processed_data/aug_mean.csv")
+write_csv(all_flow, "data/streamflow_wildfires/processed_data/all_flow.csv")

@@ -3,7 +3,7 @@
 
 library(tidyverse)
 
-itcha_daily_summary <- read.csv("tidy_data/ct_hd_temp_v_detections_fig_data.csv") %>%
+itcha_daily_summary <- read.csv("data/tidy_data/fig3/ct_hd_temp_v_detections_fig_data.csv") %>%
   mutate(time_period = case_when(date %in% c("2021-06-25", "2021-06-26", 
                                           "2021-06-27", "2021-06-28", "2021-06-29",
                                           "2021-06-30", "2021-07-01", "2021-07-02") ~ "during", 
@@ -429,5 +429,5 @@ mammals_meta<-dplyr::select(metadatadf, response_id, unique_species, study_id, c
 
 
 #save as Rdata
-save(mammals_meta, file="tidy_data/meta_analysis/mammals_meta.Rdata")
+save(mammals_meta, file="data/tidy_data/fig3/meta_analysis/mammals_meta.Rdata")
            

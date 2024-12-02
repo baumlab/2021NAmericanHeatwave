@@ -3,7 +3,7 @@
 
 
 #read in raw data
-dat_raw <- read_csv("./raw_data/heatdome_seaweeds_baumlab.csv")
+dat_raw <- read_csv("data/tidy_data/fig3/heatdome_seaweeds_baumlab.csv")
 
 # head(dat_raw)
 
@@ -307,4 +307,4 @@ red <- rbind(red_during, red_post)
 
 algae_meta <- bind_rows(acro, fucus, ulva, red, kelp, surfgrass)
 
-save(algae_meta, file="./tidy_data/meta_analysis/algae_meta.Rdata")
+save(algae_meta, file="data/tidy_data/fig3/meta_analysis/algae_meta.Rdata")

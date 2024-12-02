@@ -5,7 +5,7 @@
 library(tidyverse)
 
 #read in data
-balanus_raw <- read_csv("tidy_data/balanus_mortality_pruth.csv")
+balanus_raw <- read_csv("data/tidy_data/fig3/balanus_mortality_pruth.csv")
 
 balanus <- balanus_raw %>% 
   filter(!str_detect(site, "north")) %>% # omit the data from the north end of the beach, since they aren't paired with shade data and the character of the beach changes a bit between the center and the north end.
@@ -41,7 +41,7 @@ balanus_pruth <- ggplot(data = balanus) +
   labs(x = "exposure", y = expression(paste(italic("Balanus glandula"), " mortality (%)"))) +
   theme_classic() 
 
-ggsave("./figures/fig3_balanus_pruthbay_by_exposure.jpg", plot = balanus_pruth)
+ggsave("figures_tables/raw figures/fig3_balanus_pruthbay_by_exposure.jpg", plot = balanus_pruth)
 
 # Reformatting for meta-analysis ------------------------------------------
 
@@ -76,7 +76,7 @@ balanus_meta$dates_treatment <- balanus_raw %>%
 balanus_meta$dates_control <- balanus_raw %>% 
   distinct(date)
 
-save(balanus_meta, file="./tidy_data/meta_analysis/balanus_meta.Rdata")
+save(balanus_meta, file="data/tidy_data/fig3/meta_analysis/balanus_meta.Rdata")
 
 # maggie trying to harmonise visalisation ---------------------------------
 

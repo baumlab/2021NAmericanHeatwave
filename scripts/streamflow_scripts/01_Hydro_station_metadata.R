@@ -5,7 +5,7 @@ library(sf)
 library(purrr)
 library(tidyhydat)
 
-md<-read_csv("streamflow_treeholes/input/Hydro_station_metadata.csv")
+md<-read_csv("data/streamflow_wildfires/input/Hydro_station_metadata.csv")
 
 #===========streamflow metadata ===============
 
@@ -35,7 +35,7 @@ for (i in 1:length(stations))
 
 #importing the GDB polygon shape files
 
-sp<-readOGR("streamflow_treeholes/watersheds/WSC_Basins.gdb")
+sp<-readOGR("data/streamflow_wildfires/watersheds/WSC_Basins.gdb")
 avail.stations<-ogrListLayers("streamflow_treeholes/watersheds/WSC_Basins.gdb") %>% as.list()
 
 #!! the file "a00000004.gdbtable" is too large for github and must be manually added to the WSC_Basins.gdb folder
@@ -86,5 +86,5 @@ for (i in 1:length(stations))
 
 #==========output============
 
-write_csv(streamflow_treeholes/processed_data/stations.both, "stations_both.csv")
-write_csv(streamflow_treeholes/processed_data/md.active, "md_active.csv")
+write_csv(stations.both, "data/streamflow_wildfires/processed_data/stations_both.csv")
+write_csv(md.active, "data/streamflow_wildfires/processed_data/md_active.csv")

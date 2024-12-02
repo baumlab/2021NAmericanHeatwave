@@ -2,7 +2,7 @@ library(tidyverse)
 library(tidyhydat)
 library(lubridate)
 
-stations.both <- read_csv("streamflow_treeholes/processed_data/stations_both.csv")
+stations.both <- read_csv("data/streamflow_wildfires/processed_data/stations_both.csv")
 
 #Caution: line below will take 5-10 minutes
 #The existing local version of hydat, published on 2022-04-18, is the most recent version available.

@@ -7,7 +7,7 @@ library(here)
 library(janitor)
 library(lubridate)
 
-nucella <- read_csv(here("tidy_data", "nucella_mortality.csv")) %>% 
+nucella <- read_csv(here("data/tidy_data/fig3", "nucella_mortality.csv")) %>% 
   clean_names()
 
 nucella <- nucella %>% 
@@ -31,7 +31,7 @@ nucella_mort_pre_vs_post <- nucella %>%
   labs(y = "mean survival (%)") + 
   theme_classic() 
 
-ggsave("./figures/nucella_mort_pre_vs_post.jpg", plot = nucella_mort_pre_vs_post)
+ggsave("figures_tables/raw figures/nucella_mort_pre_vs_post.jpg", plot = nucella_mort_pre_vs_post)
 
 ##  proportion of snails that were deemed to have died during the heat dome 
 ## [2021 (recent_empty + recent_hermit) / (live + recent_empty + recent_hermit)
@@ -89,6 +89,6 @@ nucella_meta$dates_treatment <- nucella %>%
   mutate(date = as.character(date)) %>% 
   as.vector()
 
-save(nucella_meta, file="./tidy_data/meta_analysis/nucella_meta.Rdata")
+save(nucella_meta, file="data/tidy_data/fig3/meta_analysis/nucella_meta.Rdata")
   
   

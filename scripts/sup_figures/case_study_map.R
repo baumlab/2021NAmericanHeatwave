@@ -12,9 +12,6 @@
 # Authors: Katie Goodwin, ....
 
 # Map showing the heat dome and the locations of all ecological case studies for figure 3
-# Links to case studies 
-# https://docs.google.com/spreadsheets/d/1quBMM8AwOTWlanyRR4pAmzMrcHRltY05P8EUns_rMkk/edit?usp=sharing
-# https://docs.google.com/spreadsheets/d/1DqoYm0yVGiloOtPiybroc7Sa_SVAsMzgb7CotlE0Jlo/edit?usp=sharing
 
 
 ################################################################################

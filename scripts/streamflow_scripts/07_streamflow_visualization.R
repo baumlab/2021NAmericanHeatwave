@@ -4,13 +4,13 @@ library(lubridate) ## Deal with dates
 library(visreg)
 library(gridExtra)
 
-all_dats<-read_csv("streamflow_treeholes/processed_data/waterflow2021_dailymean.csv")
+all_dats<-read_csv("data/streamflow_wildfires/processed_data/waterflow2021_dailymean.csv")
 
 #flow_all<- read_csv("flow_all.csv") 
 # this file is too large for github, so create it in 06 script, store outside github, 
 #and import with a modification of this line
 
-xvar<-read_csv("streamflow_treeholes/processed_data/xvar_streamflow.csv") 
+xvar<-read_csv("data/streamflow_wildfires/processed_data/xvar_streamflow.csv") 
 
 #==== find a stream that demonstrates mean behaviour ======
 

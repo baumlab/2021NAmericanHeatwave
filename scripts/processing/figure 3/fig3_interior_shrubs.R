@@ -113,7 +113,7 @@ sask_meta <- sask_meta1 %>%
 # combine 2 species
 shrub_meta <- rbind(rose_meta, sask_meta)
 
-save(shrub_meta, file="./tidy_data/meta_analysis/interiorshrubMAS_meta.RData")
+save(shrub_meta, file="data/tidy_data/fig3/meta_analysis/interiorshrubMAS_meta.RData")
 
 
 

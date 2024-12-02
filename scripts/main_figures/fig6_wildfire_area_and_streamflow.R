@@ -5,15 +5,15 @@ library(ggplot2)
 
 
 #2021 year alone
-wildfires_2021<-read.csv("raw_data/wildfire_data/wildfire_stats_2021.csv")
+wildfires_2021<-read.csv("data/raw_data/wildfire_data/wildfire_stats_2021.csv")
 wildfires_2021$year<-as.factor(wildfires_2021$year)
 
 #last 5 years
-wildfires_2016<-read.csv("raw_data/wildfire_data/wildfire_stats_2016_2020.csv")
+wildfires_2016<-read.csv("data/raw_data/wildfire_data/wildfire_stats_2016_2020.csv")
 wildfires_2016$year<-as.factor(wildfires_2016$year)
 
 #2000-2021
-wildfires_2000<-read.csv("raw_data/wildfire_data/wildfire_stats_2000_2020.csv")
+wildfires_2000<-read.csv("data/raw_data/wildfire_data/wildfire_stats_2000_2020.csv")
 wildfires_2000$year<-as.factor(wildfires_2000$year)
 
 
@@ -114,4 +114,4 @@ p2
 
 b3<-grid.arrange(p2, b2, nrow=2, heights=c(1,1.5))
 
-ggsave(b3, filename = "Figure6.tiff", width = 10 , height = 12,device = tiff, dpi = 300)
+ggsave(b3, filename = "figures_tables/Figure6.tiff", width = 10 , height = 12,device = tiff, dpi = 300)

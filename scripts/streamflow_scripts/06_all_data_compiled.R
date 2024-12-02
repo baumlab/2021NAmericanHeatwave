@@ -7,15 +7,15 @@ library(ggExtra)
 library(gridExtra)
 library(cowplot)
 
-all_flow<-read_csv("processed_data/all_flow.csv") #streamflow changes
-all_temp<-read_csv("processed_data/all_temp.csv") #temperature changes
-glacier<-read_csv("input/glacier_snowcover_per_watersheds.csv") %>% 
+all_flow<-read_csv("data/streamflow_wildfires/processed_data/all_flow.csv") #streamflow changes
+all_temp<-read_csv("data/streamflow_wildfires/processed_data/all_temp.csv") #temperature changes
+glacier<-read_csv("data/streamflow_wildfires/input/glacier_snowcover_per_watersheds.csv") %>% 
   rename(n_NAs_ice = n_NAs,
     n_over_20_ice = n_over_20,
     n_less_20_ice = n_less_20,
     n_over_40_ice = n_over_40,
     n_less_40_ice = n_less_40)
-snow<-read_csv("input/snowcover_per_watersheds.csv") %>% 
+snow<-read_csv("data/streamflow_wildfires/input/snowcover_per_watersheds.csv") %>% 
   rename(n_NAs_snow = n_NAs,
          n_over_20_snow = n_over_20,
          n_less_20_snow = n_less_20,
@@ -337,7 +337,7 @@ xvar %>%
 
 #=== outputs ==========
 
-write_csv(xvar, "processed_data/xvar_streamflow.csv")
+write_csv(xvar, "data/streamflow_wildfires/processed_data/xvar_streamflow.csv")
 
 
 

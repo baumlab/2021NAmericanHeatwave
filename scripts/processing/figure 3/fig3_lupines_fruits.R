@@ -20,7 +20,7 @@
 ################################################################################
 ##### INPUT DATA AND CALL PACKAGES ---------------------------------------------
 ################################################################################
-luplat <- read.csv("tidy_data/LUPLATheatdome_fruits_20_21.csv") #fruit counts for luplat in 2020 and 2021
+luplat <- read.csv("data/tidy_data/fig3/LUPLATheatdome_fruits_20_21.csv") #fruit counts for luplat in 2020 and 2021
 
 str(luplat)
 
@@ -216,4 +216,4 @@ lupine_meta <- luplat %>% # format for log fruit count (not sure which response 
   
 # lupine_meta <- rbind(lupine_meta1, lupine_meta2)
 
-save(lupine_meta, file="./tidy_data/meta_analysis/lupine_meta.Rdata")
+save(lupine_meta, file="data/tidy_data/fig3/meta_analysis/lupine_meta.Rdata")
