@@ -102,8 +102,6 @@ then run: scripts/main_figures/fig6_wildfire_area_and_streamflow
 - data/streamflow_wildfires/watersheds/WSC_Basinsgdb/ [all files]
 - data/streamflow_wildfires/waterflow_2021/ [all files]
 
-*Intermediate data object* (facilitates recreation of regression models):
-- data/streamflow_wildfires/processed_data/xvar_streamflow.csv
 
 *Output:*
 - "figures_tables/raw figures/regression.tiff"
@@ -261,7 +259,12 @@ then run: scripts/main_figures/fig6_wildfire_area_and_streamflow
 *Output data:* 
 - "data/tidy_data/fig3/meta_analysis/heatdome_meta.csv"
 
+## Analysis of streamflow
 
+This follows the workflow outlined under Figure 6. In addition:
+
+*Intermediate data object* (facilitates recreation of regression models):
+- data/streamflow_wildfires/processed_data/xvar_streamflow.csv
 
 ## Table 2
 
@@ -274,7 +277,3 @@ then run: scripts/main_figures/fig6_wildfire_area_and_streamflow
 - "data/Table2/treehole_invertebrate_mortality.csv"
 
 
-===
-Script: Heatdone_intertidal_veg_analysis.R"
-Input data:"./data/intertidal_veg_grouped.csv"
-Output:"supplemental_algae.jpg"
