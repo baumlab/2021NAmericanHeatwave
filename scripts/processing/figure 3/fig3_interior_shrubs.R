@@ -22,7 +22,7 @@
 pacman::p_load(tidyverse)
 
 
-shrub_full <- read_csv("Heat dome impactsv2.csv") %>%
+shrub_full <- read_csv("data/tidy_data/fig3/shrubdata.csv") %>%
   filter(transect_no != "6 (2017 high severity)") 
 
 
