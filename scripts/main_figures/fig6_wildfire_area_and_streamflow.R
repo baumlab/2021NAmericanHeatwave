@@ -36,6 +36,8 @@ prior_mean_2000 <- fire00 %>%
     mean = mean(fire_med_high, na.rm=TRUE),
     sd1 = mean+sd(fire_med_high, na.rm=TRUE),
     sd1low = mean-sd(fire_med_high, na.rm=TRUE),
+    sd2 = mean+2*sd(fire_med_high, na.rm=TRUE),
+    sd2low = mean-2*sd(fire_med_high, na.rm=TRUE),
     Block = first(Block))
 
 #ensure the lower bound of the standard deviation is 0
@@ -57,6 +59,8 @@ prior_mean_2016 <- fire16 %>%
     mean = mean(fire_med_high, na.rm=TRUE),
     sd1 = mean+sd(fire_med_high, na.rm=TRUE),
     sd1low = mean-sd(fire_med_high, na.rm=TRUE),
+    sd2 = mean+2*sd(fire_med_high, na.rm=TRUE),
+    sd2low = mean-2*sd(fire_med_high, na.rm=TRUE),
     Block = first(Block))
 
 
@@ -71,9 +75,10 @@ fire21 <- wildfires_2021 %>%
     mean = fire_med_high,
     sd1 = fire_med_high,
     sd1low = fire_med_high,
-  ) %>% 
+    sd2 = fire_med_high,
+    sd2low = fire_med_high) %>% 
   filter(Month %in%c("06","07","08")) %>% 
-  select(MonthDay, mean, sd1, sd1low, Block)
+  select(MonthDay, mean, sd1, sd1low, sd2, sd2low, Block)
 
 
 #combine the 2021 dataframe with the mean from the 2000-2020 and 2016-2020 dataframes
@@ -91,6 +96,7 @@ combine_fire <- prior_mean_2000 %>%
 
 p2<-ggplot(data = combine_fire, aes(x = MonthDayYear, y = mean, group = Block))+
   geom_ribbon(aes(y = mean, ymin = sd1low, ymax = sd1, fill = Block), alpha = 0.5, fill = "darkgrey")+
+  geom_ribbon(aes(y = mean, ymin = sd2low, ymax = sd2, fill = Block), alpha = 0.3, fill = "darkgrey")+
   geom_line(aes(y = mean, colour = Block), size = 1)+
   #geom_line(aes(group = MonthDayYear))+ vertical lines for every day
   scale_color_manual(name = "", values = c("#0000FF", "#FF0000"))+
