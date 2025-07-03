@@ -316,7 +316,7 @@ EDT2_df<-heatdome_ROM %>%
   count(common_name, movement, impact) %>%
   as.data.frame()
 
-write_csv(EDT2_df, "extendeddatatable2.csv")
+write_csv(EDT2_df, "./figures_tables/supplement/extendeddatatable2.csv")
 
 
 
