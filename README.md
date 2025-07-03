@@ -127,6 +127,15 @@ This repository is for the synthesis paper 'Widespread ecological responses and 
 *Output data:* 
 - "data/tidy_data/fig3/meta_analysis/heatdome_meta.csv"
 
+### Step 3: The meta-analysis was performed on the compiled data: 
+
+*Script:* "scripts/main_figures/fig3meta_analysis.R"
+
+*Input:*
+- "data/tidy_data/fig3/meta_analysis/heatdome_meta.csv"\
+(the construction of this dataset is detailed in Steps 1&2 under "Meta-analysis")
+
+
 ## Analysis of streamflow
 
 *Scripts*, to be run in numbered order, in scripts/streamflow_scripts:
@@ -206,7 +215,7 @@ Avg VPD during period of heat dome:
 
 **Figure 3 and Extended Data Table 2**
 
-*Script:* "scripts/main_figures/fig3meta_analysis.R""
+*Script:* "scripts/main_figures/fig3meta_analysis.R"
 
 *Input:*
 - "data/tidy_data/fig3/meta_analysis/heatdome_meta.csv"\
