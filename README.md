@@ -248,7 +248,7 @@ Avg VPD during period of heat dome:
 - "data/fig2_raster_data/heatdome_norm_avg_VPD.tif"# Historical
 - "data/fig2_raster_data/heatdome_2021_avg_VPD.tif"# 2021
 
-*Output figure:* fig5.png
+*Output figure:* figures_tables/ fig5.png
 
 
 **Figure 6**
