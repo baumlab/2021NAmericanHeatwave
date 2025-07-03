@@ -133,7 +133,7 @@ This repository is for the synthesis paper 'Widespread ecological responses and 
 
 *Input:*
 - "data/tidy_data/fig3/meta_analysis/heatdome_meta.csv"\
-(the construction of this dataset is detailed in Steps 1&2 under "Meta-analysis")
+
 
 
 ## Analysis of streamflow
