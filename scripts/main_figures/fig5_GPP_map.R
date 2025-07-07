@@ -257,7 +257,7 @@ fig6 = fig6_main +
   annotation_custom(grob = fig6_inset, xmin = -152, xmax = -125, ymin = 38, ymax = 48)
 #fig6
 
-png("fig5.png", width=3.46, height = 2.77, units="in", res=300)
+png("figures_tables/fig5.png", width=3.46, height = 2.77, units="in", res=300)
 grid.arrange(fig6)
 dev.off()
 
