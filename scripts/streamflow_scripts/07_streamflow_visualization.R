@@ -190,7 +190,7 @@ pa0<-visreg(ma3b, "surface_anom_max", by = "cat0.0005g0.25s", overlay = TRUE,
   theme(legend.title = element_blank(),
         legend.direction = "horizontal") +
   scale_color_manual(name = "", values = c("#9ecae1", "#4292c6", "#08519c")) +
-  scale_fill_manual(name = "", values = c("#deebf7", "#9ecae1", "#6baed6")) +
+  scale_fill_manual(name = "", values = c("#deebf7", "#9ecae1", "#6baed6")) 
 
 pa0
 

@@ -108,7 +108,7 @@ p2<-ggplot(data = combine_fire, aes(x = MonthDayYear, y = mean, group = Block))+
   geom_vline(xintercept = as.numeric(as.Date("2000-07-02")), linetype="dotted") +
   theme(legend.key = element_blank(), 
         legend.title = element_text(),
-        legend.position = c(0.8, 0.8),
+        legend.position = c(0.85, 0.88),
         panel.grid.major = element_blank(), 
         panel.grid.minor = element_blank()) +
         #plot.margin = unit(c(5.5,30,20,5.5),"pt"))
@@ -123,3 +123,4 @@ p2
 b3<-grid.arrange(p2, b2, nrow=2, heights=c(1,1.5))
 
 ggsave(b3, filename = "figures_tables/Figure6.tiff", width = 10 , height = 12,device = tiff, dpi = 300)
+ggsave(b3, filename = "figures_tables/Figure6.pdf", width = 10 , height = 12,device = pdf)
