@@ -1,0 +1,78 @@
+{	"title": "Data and Code for article - Widespread ecological responses and cascading effects of the 2021 western North American heatwave",
+    "description": "Data and code to reproduce analyses and meta-analysis of the ecological impacts of the record-breaking heatwave in June 2021 in western Canada and USA",
+    "upload_type": "software",
+    "access_right": "open",
+    "version": "1.0.0",
+    "creators": [
+        {
+            "orcid": "0000-0002-9827-1612",
+            "affiliation": "University of Victoria",
+            "name": "Baum, Julia K."
+        },
+        {
+            "orcid": "0000-0003-2499-5404",
+            "affiliation": "University of British Columbia",
+            "name": "Slein, Margaret A. "
+        },
+        {
+            "orcid": "0000-0002-3338-6662",
+            "affiliation": "University of British Columbia",
+            "name": "Garen, Josef C."
+        },
+        {
+            "orcid": "0000-0003-4149-7271",
+            "affiliation": "University of Toronto",
+            "name": "Sang, Zihaohan"
+        },
+ 	{
+            "orcid": "0000-0001-6882-2105",
+            "affiliation": "University of British Columbia",
+            "name": "Emry, Sandra"
+        },
+        {
+            "orcid": "0000-0003-0660-9573",
+            "affiliation": "University of British Columbia",
+            "name": "Goodwin, Katie J.A."
+        }, {
+            "orcid": "0000-0001-5455-172X",
+            "affiliation": "BC Ministry of Forests",
+            "name": "Collins, Courtney G."
+        },
+        {
+            "orcid": "0000-0002-2008-4403",
+            "affiliation": "Carleton University",
+            "name": "Lewthwaite, Jayme"
+        }, {
+            "orcid": "0000-0002-4306-507X",
+            "affiliation": "University of British Columbia",
+            "name": "Tseng, Michelle"
+        },
+        {
+            "orcid": "0000-0003-2158-6525",
+            "affiliation": "University of British Columbia",
+            "name": "Michaletz, Sean T."
+        }, {
+            "orcid": "0000-0002-8799-3847",
+            "affiliation": "University of British Columbia",
+            "name": "Burton, A. Cole"
+        },
+        {
+            "orcid": "0000-0003-4099-943X",
+            "affiliation": "University of British Columbia",
+            "name": "Harley, Christopher D.G."
+        },
+ 	{
+            "orcid": "0000-0003-4541-5595",
+            "affiliation": "University of British Columbia",
+            "name": "Srivastava, Diane S."
+        }
+
+    ],
+
+
+    
+
+
+    "keywords": ["extreme weather event", "heat dome", "climate change", "demographic consequences", "indirect effects", "microclimate", "physiological tolerances", "thermal stress"]
+
+}
