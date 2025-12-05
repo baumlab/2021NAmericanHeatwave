@@ -166,11 +166,13 @@ then run: scripts/main_figures/fig6_wildfire_area_and_streamflow
 - data/streamflow_wildfires/watersheds/WSC_Basinsgdb/ [all files]
 - data/streamflow_wildfires/waterflow_2021/ [all files]
 
-The linear models are created in script 06_all_data_compiled. 
-In order to easily run this script in isolation from other scripts we provide: 
+The linear models are created in script 06_all_data_compiled and visualized in 07_streamflow_visualization.
+01 to 04 scripts compile the data from online sources, are computer-intensive, and require local data storage.
+In order to easily run the 06 and 07 scripts in isolation from other scripts we provide: 
 
 *Intermediate data object*:
 - data/streamflow_wildfires/processed_data/xvar_streamflow.csv
+- data/streamflow_wildfires/processed_data/all_flow.csv
 
 ## Table 2
 
