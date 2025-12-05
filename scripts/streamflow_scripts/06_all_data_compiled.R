@@ -29,8 +29,7 @@ all_var<-all_flow %>%
   left_join(all_temp, by =c("station"= "station")) %>% 
   left_join(glacier, by =c("station"= "Station")) %>% 
   left_join(snow, by =c("station"= "Station")) %>% 
-  mutate(quality = if_else(Approval.Name =="PRELIMINARY", 0.25, 1),
-         heatdome = if_else(is.nan(air_anom_max),0,1),
+  mutate(heatdome = if_else(is.nan(air_anom_max),0,1),
          snow20 = n_over_20_snow/(total_n - n_NAs_snow),
          snow40 = n_over_40_snow/(total_n - n_NAs_snow),
          ice20 = n_over_20_ice/(glacer_n - n_NAs_ice),
@@ -88,10 +87,10 @@ corrplot::corrplot(xvar.cor, method = "circle")
 
 #======== slim dataset for analysis ========
 
-#adding to xvar snow/ice categories and data quality
+#adding to xvar snow/ice categories
 
 xvar<-all_var %>% select(station, june_ratio, aug_ratio,cat0.0005g0.20s, cat0.0005g0.25s, glacier_prop, glacier_Area, temp_change, snow20, snow40, ice20, ice40, 
-                         air_anom_mean, air_anom_max, surface_anom_mean, surface_anom_max, quality) %>% 
+                         air_anom_mean, air_anom_max, surface_anom_mean, surface_anom_max) %>% 
   filter(!is.na(air_anom_mean)) %>% 
   filter(!is.na(june_ratio)) %>% 
   filter(!is.na(aug_ratio)) %>% 
@@ -169,7 +168,7 @@ x_var_scale<-xvar_trans %>%
   as.data.frame()
 
 scaleset<-xvar_trans%>% 
-  select(sqrt_june_ratio, sqrt_aug_ratio, cat0.0005g0.20s, cat0.0005g0.25s, quality, june_ratio, aug_ratio) %>% 
+  select(sqrt_june_ratio, sqrt_aug_ratio, cat0.0005g0.20s, cat0.0005g0.25s, june_ratio, aug_ratio) %>% 
   cbind(x_var_scale)
 
 
@@ -250,38 +249,18 @@ models<-function(file,response)
 #===== compete models ======
 
 output_june<-models(scaleset,"sqrt_june_ratio") #best is temp_change * sqrt_snow40 
-#just behind it is temp change * sqrt_snow40 * sqrt_glacier_prop at delta = 2.01
+#just behind it is temp change * sqrt_snow40 * sqrt_glacier_prop 
 output_june$model = row.names(output_june)
 output_june %>% as.data.frame()  %>% select(model, df:weight) %>% write_csv("processed_data/aic_june.csv")
 
 output_aug<-models(scaleset,"sqrt_aug_ratio") #best is surface_anom_max * sqrt_snow40 * sqrt_glacier_prop 
-# next best is surface_anom_max * sqrt_glacier_prop, but def not as good at delta = 3.82
+# several closely matched models 
 output_aug$model = row.names(output_aug)
 output_aug %>% as.data.frame()  %>% select(model, df:weight) %>% write_csv("processed_data/aic_aug.csv")
 
 
 MAjune<-model.avg(output_june, subset = delta<5, revised.var = TRUE)
 MAjune %>% summary()
-
-
-#================== data quality =======================
-
-#some streamflow data is "preliminary", we can downweight these
-
-#here I check if data quality influences model
-
-mj<-glm(sqrt_june_ratio ~ temp_change  * sqrt_snow40, family = gaussian, data = scaleset)
-mjw<-glm(sqrt_june_ratio ~ temp_change * sqrt_snow40, weight = quality, family = gaussian, data = scaleset)
-anova(mj, mjw, test = "Chi") #no sig difference
-Anova(mj)
-Anova(mjw)#results qualitatively the same
-
-ma<-glm(sqrt_aug_ratio ~  surface_anom_max * sqrt_snow40 * sqrt_glacier_prop, family = gaussian, data = scaleset)
-maw<-glm(sqrt_aug_ratio ~ surface_anom_max * sqrt_snow40 * sqrt_glacier_prop, weight = quality, family = gaussian, data = scaleset)
-anova(ma, maw, test = "Chi") #no sig difference
-Anova(ma)
-Anova(maw)#results qualitatively the same
-
 
 #================== visualization in continuous space ==================
 mj<-glm(sqrt(june_ratio) ~ temp_change  * sqrt(snow40), family = gaussian, data = xvar)
